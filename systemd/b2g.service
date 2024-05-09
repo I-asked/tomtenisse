@@ -1,0 +1,13 @@
+[Unit]
+Description=Boot to Gecko
+After=miral-kiosk.service
+BindsTo=miral-kiosk.service
+ConditionUser=!root
+
+[Service]
+Type=simple
+ExecStart=/opt/b2g/b2g
+Restart=always
+
+[Install]
+WantedBy=miral-kiosk.service
