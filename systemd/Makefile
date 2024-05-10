@@ -1,7 +1,7 @@
 all:
 
 
-install-systemd-chain: miral-kiosk.service b2g.service
+install-systemd-chain: startup-precondition.path startup-precondition.target miral-kiosk.service b2g.service
 	install -d $(DESTDIR)/lib/systemd/user/
 	install -d $(DESTDIR)/lib/systemd/user/default.target.wants/
 	cp $^ $(DESTDIR)/lib/systemd/user/

@@ -4,9 +4,8 @@ ConditionUser=!root
 
 [Service]
 Type=simple
-ExecStartPre=/usr/bin/startup-precondition
 ExecStart=/usr/bin/miral-kiosk
 Restart=always
 
 [Install]
-WantedBy=default.target
+WantedBy=startup-precondition.target

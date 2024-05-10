@@ -1,0 +1,9 @@
+[Unit]
+Description=Startup Precondition test for libhybris
+
+[Path]
+PathExists=/dev/.coldboot_done
+Unit=startup-precondition.target
+
+[Install]
+WantedBy=default.target
