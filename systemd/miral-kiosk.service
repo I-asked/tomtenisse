@@ -5,6 +5,7 @@ ConditionUser=!root
 [Service]
 Type=simple
 Environment=HYBRIS_EGLPLATFORM=null
+ExecStartPre=-/bin/sh -ec '/bin/echo QUIT >/run/psplash_fifo'
 ExecStart=/usr/bin/miral-kiosk
 Restart=always
 
