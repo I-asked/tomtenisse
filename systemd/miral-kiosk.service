@@ -4,6 +4,7 @@ ConditionUser=!root
 
 [Service]
 Type=simple
+Environment=HYBRIS_EGLPLATFORM=null
 ExecStart=/usr/bin/miral-kiosk
 Restart=always
 
