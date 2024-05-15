@@ -7,7 +7,7 @@ ConditionUser=!root
 [Service]
 Type=simple
 Environment=LD_LIBRARY_PATH=/opt/b2g DISPLAY=%t/wayland-0
-ExecStart=/opt/b2g/b2g
+ExecStart=/opt/b2g/b2g -profile %h/.b2g/profile
 Restart=always
 
 [Install]
