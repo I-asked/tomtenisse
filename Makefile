@@ -6,4 +6,8 @@ install:
 	$(MAKE) -C systemd install
 
 
-.PHONY: all install
+all:
+	@echo nothing to clean
+
+
+.PHONY: all install clean
